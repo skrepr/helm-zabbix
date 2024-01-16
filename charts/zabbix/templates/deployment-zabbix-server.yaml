@@ -115,8 +115,6 @@ spec:
             - name: {{ $item.name }}
               value: {{ $item.value | quote }}
             {{- end }}
-            - name: ZBX_AUTOHANODENAME
-              value: "hostname"
             - name: ZBX_NODEADDRESS
               valueFrom:
                 fieldRef:
